@@ -1,0 +1,13 @@
+.bg-light{
+    background-color: white !important;
+}
+
+.navbar{
+    height: 70px;
+}
+
+.search-box{
+    width: 30vw !important;
+    padding: 10px;
+    margin-left: 6px;
+}
