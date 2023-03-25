@@ -4,20 +4,22 @@ import '../App.css';
 import './navbar.css';
 
 import logo from '../image/logo.PNG';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
     return (
         <div>
-            <nav className="navbar bg-light shadow">
+            <nav className="navbar navbar-expand-lg bg-light shadow">
                 <div className="container-fluid">
-                    <Link to="/" className="navbar-brand ms-5"><img src={logo} style={{ height: '3rem' }} alt="app logo" /></Link>
-                    <form className="d-flex me-5" role="search">
+                    <NavLink to="/" className="navbar-brand ms-md-5 ms-sm-1"><img className='navbar-brand-img' src={logo} alt="app logo" /></NavLink>
+                    <form className="d-flex me-md-5 me-sm-1" role="search">
                         <input className="search-box form-control me-2 text-muted" type="search" placeholder="Search" aria-label="Search" />
+                        <a className="nav-link navbar-search-icon m-2 pe-2 text-dark fs-5" href="#"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
                         <a className="nav-link m-2 pe-2 text-dark fs-5" href="#"><i class="fa-sharp fa-solid fa-house"></i></a>
                         <a className="nav-link m-2 pe-2 text-dark fs-5" href="#"><i class="fa-sharp fa-regular fa-heart"></i></a>
-                        <a className="nav-link m-2 text-dark fs-5" href="#"><i class="fa-sharp fa-regular fa-circle fa-2xl"></i></a>
+                        <NavLink className="nav-link m-2 text-dark fs-5" to="/myprofile"><i class="fa-sharp fa-regular fa-circle fa-xl"></i></NavLink>
                     </form>
+
                 </div>
             </nav>
         </div>

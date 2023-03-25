@@ -1,0 +1,20 @@
+.img-profile-pic{
+    height: 70px ;
+    width: 70px;
+}
+
+.rounded {
+    border-radius: 1.25rem !important;
+}
+
+.profile-description{
+    margin-top: -14px;
+}
+
+.timestamp{
+    font-size: x-small;
+}
+
+.btn{
+    border: none !important;
+}

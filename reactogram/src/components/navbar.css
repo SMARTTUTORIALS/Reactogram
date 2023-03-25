@@ -3,11 +3,45 @@
 }
 
 .navbar{
-    height: 70px;
+    height: 75px !important;
+}
+
+.navbar-brand-img{
+    height: 3rem;
 }
 
 .search-box{
-    width: 30vw !important;
+    width: 30vw;
     padding: 10px;
     margin-left: 6px;
+}
+
+.navbar-search-icon{
+    display: none;
+}
+
+@media only screen and (max-width: 450px) {
+    .search-box {
+        display: none;
+    }
+
+    .navbar-search-icon{
+        display: block;
+    }
+
+    .navbar-brand-img{
+        height: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .navbar-brand-img{
+        height: 2rem;
+    }
+
+    .nav-link{
+        margin-left: 0px !important;
+        padding-left: 0px !important;
+        font-size: smaller !important;
+    }
 }
